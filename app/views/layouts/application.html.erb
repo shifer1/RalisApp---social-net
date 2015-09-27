@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="#" class="brand">Tot-Social</a>
+				<ul class="nav">
+					<li><%= link_to "Statues", statuses_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-<%= yield %>
+	<div class="container">
+	   <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+		<%= yield %>
+	</div>
 
 </body>
 </html>
