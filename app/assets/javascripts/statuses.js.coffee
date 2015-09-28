@@ -5,5 +5,7 @@
 $ ->
 	$('.status').hover (event) ->
 		$(this).toggleClass('hover')
-
-
+	
+	$(".status").each (index) ->
+		$(this).delay(100 * index).slideDown 150
+		return
